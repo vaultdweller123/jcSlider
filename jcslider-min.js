@@ -1,0 +1,1 @@
+function rotate(e){var t=jQuery("#"+e+" div.current");var n=t.next();if(n.length==0)n=jQuery("#"+e+" div:first");t.removeClass("current").addClass("prev");n.css({opacity:0}).addClass("current").animate({opacity:1},1e3,function(){t.removeClass("prev")})}var jcSlider=function(e){var t=e.id;var n=e.speed!=null?e.speed:4e3;setInterval("rotate('"+t+"')",n)}
